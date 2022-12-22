@@ -1,3 +1,26 @@
+header {
+    width: 100%;
+    padding: 2%;
+    
+}
+
 nav{
-    background-color: yellow;
+   
+   display: flex;
+   justify-content: flex-end;
+   position: absolute;
+   left: 70%;
+   top: 8%;
+   width: 20%;
+   
+    
+}
+
+nav a {
+    color: #FF6060;
+    font-size: 24px;
+    padding-left: 3%; 
+    padding-right: 4%;
+    
+    
 }
