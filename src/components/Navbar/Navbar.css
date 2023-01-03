@@ -9,8 +9,8 @@ nav{
    display: flex;
    justify-content: flex-end;
    position: absolute;
-   left: 70%;
-   top: 8%;
+   left: 55%;
+   top: 10%;
    width: 20%;
    
     
@@ -19,8 +19,13 @@ nav{
 nav a {
     color: #FF6060;
     font-size: 24px;
+    font-weight: 500;
     padding-left: 3%; 
     padding-right: 4%;
+    text-decoration: none;
     
-    
+}
+
+nav a:hover {
+    text-decoration: underline;
 }

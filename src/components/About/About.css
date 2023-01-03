@@ -1,0 +1,9 @@
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+.about img {
+    border-radius: 25px;
+}

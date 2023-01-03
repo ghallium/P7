@@ -1,9 +1,11 @@
 import React from 'react'
+import imgAbout from '../../assets/about.png'
+import './About.css'
 
 export default function About() {
     return (
-        <div>
-            <h1>Deuxième titre</h1>
-        </div>
+        <section className="about">
+            <img src={imgAbout} alt="décor montagneux" />
+        </section>
     )
 }

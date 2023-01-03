@@ -1,0 +1,22 @@
+.error_title {
+    font-weight: 700;
+    font-size: 288px;
+    color: #FF6060;
+    margin: 0 auto;
+}
+
+.error_text {
+    font-weight: 500;
+    font-size: 36px;
+    color: #FF6060;
+    text-align: center;
+}
+
+.error_back {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
