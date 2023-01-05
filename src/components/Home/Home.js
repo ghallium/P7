@@ -4,20 +4,23 @@ import "./home.css";
 import logements from "../../data/logements.json";
 import { Link } from "react-router-dom";
 
+
 export default function Home() {
   return (
     <>
-    <section className="headline">
-        <div className="headline_img_container">
-          <img src={imgHeadline} alt="décor rocheux" />
-          <h1>Chez vous, partout et ailleurs</h1>
+      <section className="titi">
+        <div className="toto">
+          <div className="sectionP">
+            <p style={{ backgroundImage: `url(${(imgHeadline)})` }}> Chez vous ...</p>
+          </div>
         </div>
-    </section>
+      </section>
       <div className="housing">
         {logements.map((l) => (
           <Link key={l.id} to={`/logement/${l.id}`}>
-            <div className="housing_card"><div className="housing_card_gradient"></div><p className="housing_card_title">{l.title}</p></div>
-            
+            <div className="card" style={{ backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(${l.cover})` }}>
+              <p className="housing_card_title">{l.title}</p></div>
+
           </Link>
         ))}
       </div>
