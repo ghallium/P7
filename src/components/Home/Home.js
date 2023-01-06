@@ -8,10 +8,10 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <>
-      <section className="titi">
-        <div className="toto">
-          <div className="sectionP">
-            <p style={{ backgroundImage: `url(${(imgHeadline)})` }}> Chez vous ...</p>
+      <section className="main_block">
+        <div className="headline_container">
+          <div className="headline">
+            <p style={{ backgroundImage: `url(${(imgHeadline)})` }}> Chez vous, partout et ailleurs</p>
           </div>
         </div>
       </section>

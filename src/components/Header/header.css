@@ -1,5 +1,38 @@
+header {
+    display: flex;
+    width: 100%;
+    padding-top: 2%;
+    
+}
+
+header div {
+    display: flex;
+    width: 20%;
+    
+}
+
 header img {
     width: 210.32px;
     height: 68px;
-    margin-left: 24%;
+    
+    
+}
+
+ul {
+    width: 80%;
+    
+}
+
+ul a {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: #FF6060;
+}
+
+ul a:hover {
+    text-decoration: underline;
 }

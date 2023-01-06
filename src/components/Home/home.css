@@ -1,16 +1,17 @@
 /* HEADLINE */
-.toto{
+.headline_container{
     width: 100%;
 }
-.sectionP{
+.headline {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sectionP p{
+.headline p{
     color: white;
     font-size: 48px;
+    font-weight: 500;
     display: flex;
     width: 100%;
     height: 220px;

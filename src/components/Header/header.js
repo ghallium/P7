@@ -9,11 +9,12 @@ export default function Header() {
         <header>
             <div>
                 <img src={LogoKasa} alt="logo Kasa" />
+            </div>
                 <ul>
                     <Link to="/">Accueil</Link>
                     <Link to="/about">A propos</Link>
                 </ul>
-            </div>
+            
         </header>
     )
 }
