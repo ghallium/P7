@@ -1,6 +1,6 @@
 import React from "react";
 import imgHeadline from "../../assets/IMG.png";
-import "./home.css";
+import "../Home/home.css";
 import logements from "../../data/logements.json";
 import { Link } from "react-router-dom";
 

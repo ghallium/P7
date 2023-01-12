@@ -1,8 +1,8 @@
 import React, { useEffect, useState} from "react";
 import { useParams } from 'react-router-dom';
-import Stars from '../stars';
-import Carousel from '../carousel/carousel.js';
-import '../Logements/logements.css';
+import Stars from '../../components/stars';
+import Carousel from '../../components/carousel/carousel';
+import '../../Pages/Logements/logements.css';
 
 
 

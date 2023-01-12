@@ -1,6 +1,6 @@
 import React from 'react';
-import './Error.css';
-import Header from '../Header/header';
+import '../../Pages/Error/Error.css';
+import Header from '../../components/Header/header';
 
 function Error() {
   return <div>

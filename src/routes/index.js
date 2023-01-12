@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Blank from "../layouts/Blank";
 import Default from "../layouts/Default";
-import Error from "../components/Error/Error";
-import Home from "../components/Home/Home";
-import About from "../components/About/About";
-import Logements from "../components/Logements/logements";
+import Error from "../Pages/Error/Error";
+import Home from "../Pages/Home/Home";
+import About from "../Pages/About/About";
+import Logements from "../Pages/Logements/logements";
 
 const Router = () => {
   return (
