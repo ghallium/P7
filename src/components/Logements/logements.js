@@ -1,8 +1,13 @@
 import React, { useEffect, useState} from "react";
 import { useParams } from 'react-router-dom';
+import Stars from '../stars';
+import Carousel from '../carousel/carousel.js';
+import '../Logements/logements.css';
+
 
 
 import data from "../../data/logements.json";
+
 
 
 export default function Logements() {
@@ -12,6 +17,13 @@ export default function Logements() {
   const [logement, setLogement] = useState({
     tags: [],
     host: {name: "", picture: ""},
+    equipments: [],
+    description: "",
+    location: "",
+    pictures: [],
+    cover: "",
+    rating: "",
+    
     
   });
   ;
@@ -31,6 +43,7 @@ export default function Logements() {
   console.log(logement)
   return (
    <>
+    <Carousel pictures={logement.pictures} />
     <div className="content">
       <div className="left_block">
         <div className="location">
@@ -49,7 +62,7 @@ export default function Logements() {
     
     <div className="right_block">
         <div className="rating">
-
+            <Stars rating={logement.rating} />
         </div>
     </div>
 

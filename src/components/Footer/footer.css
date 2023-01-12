@@ -1,5 +1,5 @@
 footer {
-    width: 1440px;
+    width: 100%;
     background: black;
     height: 209px;
     margin: 0 auto;
@@ -20,4 +20,17 @@ footer p {
     color: white;
     font-weight: 500;
     font-size: 24px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    footer img {
+        width: 122px;
+        height: 39.44px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
 }

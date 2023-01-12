@@ -46,7 +46,7 @@
 }
 
 .housing_card {
-    /*background: #FF6060;*/
+    
     border-radius: 10px;
     width: 340px;
     height: 340px;
@@ -72,8 +72,8 @@
 }
 
 .card {
-    height: 100%;
-    width: 100%;
+    height: 340px;
+    width: 340px;
     position: relative;
     display: flex;
     border-radius: 10px;
@@ -81,4 +81,44 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/*
+----------------------------------
+RESPONSIVE
+----------------------------------
+*/
+
+/* TABLETTES */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .headline p {
+        width: 95%;
+        border-radius: 10px;
+    }
+
+}
+
+/* MOBILES */
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    .headline p {
+        width: 335px;
+        height: 111px;
+        border-radius: 10px;
+        font-size: 24px;
+        padding-left: 2%;
+    
+    }
+
+    .housing {
+        background: white;
+        padding-top: 0;
+    }
+
+    .card {
+        height: 255px;
+    }
 }
