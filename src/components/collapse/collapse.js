@@ -10,7 +10,7 @@ export default function Collapse(props) {
   
     function inputCollapse() {
       setIsActive(isActive === "" ? "active" : "");
-      setRotate(rotate === "180deg" ? "0deg" : "180deg");
+      setRotate(rotate === "90deg" ? "90deg" : "90deg");
       setDisplay(display === "block" ? "none" : "block");
     }
   

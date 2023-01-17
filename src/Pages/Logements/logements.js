@@ -83,3 +83,11 @@ export default function Logements() {
     </> 
   );
 }
+
+/* Problèmes connus 
+
+Home - Espace entre les logements sur version mobile
+About - Mettre le darken sur l'image, bug image couv lors du changement mobile > desktop
+Collapse - comment gérer le changement de taille de texte en fonction de la page (about, logement)
+Mise en page logements
+*/
