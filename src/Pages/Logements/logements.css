@@ -1,119 +1,93 @@
-img {
-    width: 100%;
-    height: 100%;
-  }
+.slider {
+  width: 100%;
+  border: 3px solid black;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+/* Bloc gauche, nom du logement, location et tags */
+
+.content {
+
+  width: 100%;
+  display: flex;
+  border: 3px solid blue;
+
+}
+
+.left_block {
+  width: 30%;
+  border: 3px solid red;
+}
+
+.location b {
+  font-size: 36px;
+  font-weight: 500;
+  color: #FF6060;
+}
+
+.location p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #FF6060;
+}
+
+.tags {
+  border: 3px solid green;
+  display: flex;
+}
+
+.tags_elements {
+  width: 50%;
+  display: flex;
   
-  .content {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-  }
+  justify-content: space-evenly;
+  list-style-type: none;
   
-  .content p {
-    font-size: 18px;
-    color: #FF6060;
-  }
+}
+
+.tags_elements li {
+  background: #FF6060;
+  color: white;
+  font-size: 14px;
+  width: 115px;
+  height: 25px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-  .content b {
-    color: #FF6060;
-    font-size: 36px;
-    background-color: white;
-  }
-  
-  .content.img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #C4C4C4;
-  }
-  
-  .right_block {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-  }
-  
-  .host {
-    display: flex;
-  }
-  
-  .host img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-  }
-  
-  .host p {
-    width: 80px;
-    color: #FF6060;
-    text-align: -webkit-right;
-    margin-right: 10px;
-  }
-  
-  .tags {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .tags li {
-    justify-content: flex-start;
-    color: white;
-    background-color: #FF6060;
-    border-radius: 10px;
-    width: 115px;
-    padding: 5px 5px;
-    margin: 5px 5px;
-    text-align: center;
-  }
-  
-  .description {
-    display: flex;
-    margin: 10px;
-  }
-  
-  .description div {
-    margin: 0 5px;
-    flex: 1 1 0px;
-  }
-  
-  .text div, .equipements ul {
-    background-color: #F6F6F6;
-  }
-  
-  .texte li {
-    list-style: none;
-  }
-  
-  .equipements, .text {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 20px;
-  }
-  
-  .active-star {
-    fill: #FF6060;
-  }
-  
-  h2 {
-    padding: 15px 20px;
-    background-color: #FF6060;
-    border-radius: 10px;
-    color: white;
-    -webkit-margin-before: 0;
-            margin-block-start: 0;
-    -webkit-margin-after: 0;
-            margin-block-end: 0;
-  }
-  
-  svg {
-    width: 30px;
-    height: 30px;
-    fill: #C4C4C4;
-  }
-  
-  .equipements ul {
-    display: flex;
-    flex-direction: column;
-  }
+}
+
+/* Bloc de droite avec étoiles*/
+
+.right_block {
+  display: flex;
+  justify-content: flex-end;
+  border: 3px solid purple;
+}
+
+.rating {
+  border: 3px solid black;
+  width: 70%;
+  display: flex;
+}
+
+.host {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.description {
+  display: flex;
+  justify-content: space-evenly;
+}

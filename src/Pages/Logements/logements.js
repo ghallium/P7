@@ -2,6 +2,7 @@ import React, { useEffect, useState} from "react";
 import { useParams } from 'react-router-dom';
 import Stars from '../../components/stars';
 import Carousel from '../../components/carousel/carousel';
+import Collapse from '../../components/collapse/collapse';
 import '../../Pages/Logements/logements.css';
 
 
@@ -45,36 +46,40 @@ export default function Logements() {
    <>
     <Carousel pictures={logement.pictures} />
     <div className="content">
-      <div className="left_block">
-        <div className="location">
-          <b>{logement.title}</b>
-          <p>{logement.location}</p>
+        <div className="left_block">
+            <div className="location">
+              <b>{logement.title}</b>
+              <p>{logement.location}</p>
         </div>
         <div className="tags">
-          <ul>
-          {logement.tags.map((t) => (
-                <li key={t}>{t}</li>
-              ))}
-          </ul>
+            <ul className="tags_elements">
+              {logement.tags.map((t) => (
+                  <li key={t}>{t}</li>
+                ))}
+            </ul>
         </div>
       </div>
-    </div>
-    
-    <div className="right_block">
+      <div className="right_block">
         <div className="rating">
             <Stars rating={logement.rating} />
         </div>
+        <div className="host">
+          <p>{logement.host.name}</p>
+          <img src={logement.host.picture} alt="host" />
+        </div>
+        
+    </div>          
     </div>
-
-    <div className="host">
-      <p>{logement.host.name}</p>
-      <img src={logement.host.picture} alt="host" />
-    </div>
-
+    
+    
     <div className="description">
-      <p>{logement.description}</p>
-      <p>{listeEquipements}</p>
-    </div>
+          <Collapse texte={logement.description} title="Description" />
+          <Collapse texte={listeEquipements} title="Equipements" />
+        </div>
+
+    
+
+    
     </> 
   );
 }

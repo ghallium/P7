@@ -2,7 +2,7 @@
     font-weight: 700;
     font-size: 288px;
     color: #FF6060;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .error_text {
@@ -19,4 +19,21 @@
     display: flex;
     justify-content: center;
     margin-top: 130px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    .error_title {
+        font-size: 96px;
+        
+    }
+
+    .error_text {
+        font-size: 18px;
+    }
+
+    .error_back {
+        font-size: 14px;
+    }
+
 }

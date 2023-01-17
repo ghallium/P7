@@ -1,34 +1,28 @@
-.about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+/*.cover {
+    background: #000000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+}*/
 
-.about img {
-    width: 1240px;
-    height: 223px;
+.cover img {
     border-radius: 25px;
-    margin: 0 auto;
+    height: 250px;
     margin-bottom: 25px;
-}
-
-.red_rectangle {
-    background: #FF6060;
-    width: 1023px;
-    height: 47px;
-    border-radius: 5px;
-    
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
     
 }
 
-.red_rectangle p {
-    color: white;
-    font-size: 24px;
-    font-weight: 500;
-    padding-left: 2%;
+@media screen and (min-width: 375px) and (max-width: 699px) {
+
+    .cover {
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 4%;
+        margin-top: -9px;
+    }
+
+    .cover img {
+        width: 340px;
+        margin-bottom: 5px;
+    }
+
 }
