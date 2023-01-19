@@ -1,8 +1,8 @@
 import React from 'react'
-import { useEffect, useState } from "react";
+
 import imgAbout from '../../assets/about.png';
-import imgAboutMobile from '../../assets/aboutMobile.png';
-import '../About/About.css';
+
+import './About.css';
 import Collapse from '../../components/collapse/collapse';
 
 
@@ -42,34 +42,14 @@ export default function About() {
         
     }
     const Values = AboutValues();
-    const [mode, setMode] = useState("desktop");
-    useEffect(() => {
-        if (window.innerWidth >= 699) {
-        setMode("desktop");
-        } else {
-        setMode("mobile");
-    }
-        window.addEventListener("resize", onResize);
-
-    function onResize() {
-      if (window.innerWidth >= 699 && mode === "mobile") {
-        setMode("desktop");
-      } if (window.innerWidth < 699 && mode==='desktop'){
-        setMode("mobile");
-      }
-    }
-  },[]);
+    
   
 
   return (
     <div>
       
       <div className="cover">
-        <img
-          className={mode}
-          src={mode === "mobile" ? imgAboutMobile : imgAbout}
-          alt="décor montagneux"
-        />
+        <p className="imgAbout" style={{ backgroundImage: `url(${(imgAbout)})` }}></p>
       </div>
       {Values.map((item) => {
         return <Collapse title={item.title} texte={item.texte} key={item.id} />;
