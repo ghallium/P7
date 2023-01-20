@@ -1,68 +1,86 @@
-.collapse-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ff6060;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    max-width: 1023px;
-    color: #f6f6f6;
-    border-radius: 10px;
-    padding: 10px 20px;
-  }
+.accordion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   
-  button {
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border: 0;
-  }
-  
-  .vector {
-    height: 30px;
-    width: 30px;
-    rotate: 90deg;
-    cursor: pointer;
-  }
-  
-  .title {
-    position: absolute;
-  }
-  
-  h1 {
-    color: white;
-    -webkit-margin-after: 10px;
-            margin-block-end: 10px;
-    -webkit-margin-before: 0;
-            margin-block-start: 0;
-    font-size: 20px;
-  }
-  
-  .texte {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    background-color: #f6f6f6;
-    border-radius: 0px 0px 5px 5px;
-    font-size: 1.3em;
-    padding: 20px 20px;
-    position: relative;
-    top: -20px;
-    max-width: 1023px;
-    margin: 0 auto;
-    color: #FF6060;
-    font-size: 24px;
-    font-weight: 400;
-  }
+}
 
-  @media screen and (min-width: 375px) and (max-width: 699px) {
+.accordionTitle {
+  background: #FF6060;
+  width: 68%;
+  height: 47px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  
+}
 
-    .collapse-block {
-      width: 300px;
+.accordionTitle p {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  padding-left: 2%;
+}
+
+.accordionContent {
+  width: 68%;
+  
+  padding-top: 1%;
+  padding-bottom: 1%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  
+}
+
+.accordion.active .accordionContent {
+  max-height: 200px; /* change this value to the max height of the accordionContent */
+  background: #F6F6F6;
+}
+
+.accordionContent p {
+  color: #FF6060;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34.22px;
+  padding-left: 2%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.vector {
+  width: 14px;
+  height: 23px;
+  margin-right: 13px;
+  transform: rotate(90deg);
+  cursor: pointer;
+  
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    .accordionTitle {
+      width: 89%;
+      height: 30px;
     }
 
-    .texte {
-      width: 300px;
+    .accordionTitle p {
+      font-size: 13px;
     }
 
-  }
+    .accordionContent {
+      width: 89%;
+    }
+
+    .accordionContent p {
+      font-size: 12px;
+      line-height: 17.11px;
+    }
+
+    .vector {
+      width: 8.98px;
+      height: 15.2px;
+    }
+
+}
