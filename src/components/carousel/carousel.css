@@ -1,0 +1,30 @@
+.slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+
+.vectorPrev {
+    width: 46.68px;
+    height: 79.2px;
+    transform: rotate(180deg);
+    
+    
+}
+
+.slider-image {
+    border-radius: 25px;
+}
+
+.slider-image img {
+    
+}
+
+.vectorNext {
+    width: 46.68px;
+    height: 79.2px;
+    
+    order: 3;
+}

@@ -1,93 +1,79 @@
-.slider {
-  width: 100%;
-  border: 3px solid black;
-}
-
-.slider img {
-  width: 100%;
-  border-radius: 25px;
-}
-
-/* Bloc gauche, nom du logement, location et tags */
-
 .content {
-
-  width: 100%;
-  display: flex;
-  border: 3px solid blue;
-
+    width: 100%;
+    display: flex;
+    
+    flex-wrap: wrap;
+    border: 3px solid red;
 }
 
 .left_block {
-  width: 30%;
-  border: 3px solid red;
-}
-
-.location b {
-  font-size: 36px;
-  font-weight: 500;
-  color: #FF6060;
-}
-
-.location p {
-  font-size: 18px;
-  font-weight: 500;
-  color: #FF6060;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
 }
 
 .tags {
-  border: 3px solid green;
-  display: flex;
+    display: flex;
 }
 
 .tags_elements {
-  width: 50%;
-  display: flex;
-  
-  justify-content: space-evenly;
-  list-style-type: none;
-  
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
 }
 
 .tags_elements li {
-  background: #FF6060;
-  color: white;
-  font-size: 14px;
-  width: 115px;
-  height: 25px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    background: #FF6060;
+    border-radius: 10px;
+    width: 115px;
+    height: 25px;
+    margin-right: 10px;
 }
 
-/* Bloc de droite avec étoiles*/
+
+.location b {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.location p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+
 
 .right_block {
-  display: flex;
-  justify-content: flex-end;
-  border: 3px solid purple;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
 }
 
 .rating {
-  border: 3px solid black;
-  width: 70%;
-  display: flex;
+    display: flex;
 }
 
 .host {
-  display: flex;
-  justify-content: flex-end;
+    border: 3px solid green;
+    display: flex;
+    justify-content: flex-end;
+  
 }
 
 .host img {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-}
-
-.description {
-  display: flex;
-  justify-content: space-evenly;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
 }

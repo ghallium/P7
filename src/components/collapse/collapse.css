@@ -35,7 +35,7 @@
 }
 
 .accordion.active .accordionContent {
-  max-height: 200px; /* change this value to the max height of the accordionContent */
+  max-height: 200px; 
   background: #F6F6F6;
 }
 
@@ -56,6 +56,10 @@
   transform: rotate(90deg);
   cursor: pointer;
   
+}
+
+.vector.active {
+  transform: rotate(-90deg);
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {

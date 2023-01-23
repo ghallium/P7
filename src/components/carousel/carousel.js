@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import data from "../../data/logements.json";
 import Vector from "../../assets/Vector.svg";
+import './carousel.css';
 
 export default function Carousel() {
     const {id} = useParams();
