@@ -72,9 +72,13 @@ export default function Logements() {
     </div>
     
     
-    <div className="description">
-          <Collapse texte={logement.description} title="Description" />
-          <Collapse texte={listeEquipements} title="Equipements" />
+    <div className="bottom_block">
+         <div className="description"> 
+            <Collapse texte={logement.description} title="Description" />
+          </div>
+          <div className="equipements">
+            <Collapse texte={listeEquipements} title="Equipements" />
+          </div>
         </div>
 
     

@@ -28,3 +28,26 @@
     
     order: 3;
 }
+
+.image-number {
+    display: none;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    .slider-image {
+        width: 335px;
+        border-radius: 10px;
+    }
+
+    .vectorPrev {
+        width: 11.67px;
+        height: 19.8px;
+    }
+
+    .vectorNext {
+        width: 11.67px;
+        height: 19.8px;
+    }
+
+}
