@@ -9,6 +9,7 @@
 .vectorPrev {
     width: 46.68px;
     height: 79.2px;
+    border: 0;
     transform: rotate(180deg);
     
     
@@ -25,7 +26,7 @@
 .vectorNext {
     width: 46.68px;
     height: 79.2px;
-    
+    border: 0;
     order: 3;
 }
 

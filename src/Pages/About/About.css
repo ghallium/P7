@@ -15,11 +15,37 @@
     
 }
 
+/*
+----------------------------------
+RESPONSIVE
+----------------------------------
+*/
+
+/* TABLETTES */
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+
+    .imgAbout {
+        width: 90%;
+        border-radius: 15px;
+    }
+
+
+}
+
+/* MOBILES */
+
+
 @media screen and (min-width: 375px) and (max-width: 767px) {
 
+    .cover {
+        margin-top: -25px;
+    }
+    
     .imgAbout {
        width: 90%; 
        background-position: center;
+       border-radius: 10px;
         
     }
 

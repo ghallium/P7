@@ -35,8 +35,10 @@
 }
 
 .accordion.active .accordionContent {
-  max-height: 200px; 
+  max-height: 250px; 
   background: #F6F6F6;
+  margin-bottom: 30px;
+  border-radius: 5px;
 }
 
 .accordionContent p {
@@ -62,8 +64,34 @@
   transform: rotate(-90deg);
 }
 
+/*
+----------------------------------
+RESPONSIVE
+----------------------------------
+*/
+
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+
+  .accordion {
+    margin-bottom: 15px;
+  }
+  
+  .accordionTitle {
+      width: 90%;
+  }
+
+  .accordionContent {
+    width: 90%;
+}
+
+}
+
 @media screen and (min-width: 375px) and (max-width: 767px) {
 
+    .accordion {
+      margin-bottom: 15px;
+    }
+  
     .accordionTitle {
       width: 89%;
       height: 30px;
