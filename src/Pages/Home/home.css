@@ -13,7 +13,7 @@
     font-size: 48px;
     font-weight: 500;
     display: flex;
-    width: 100%;
+    width: 1240px;
     height: 220px;
     background-position: center;
     object-fit: cover;
@@ -35,8 +35,9 @@
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 10px;
-
-    padding-top: 20px
+    width: 90%;
+    padding-top: 20px;
+    margin: 0 auto;
 }
 
 .housing>a {
@@ -98,6 +99,10 @@ RESPONSIVE
         border-radius: 8px;
         font-size: 30px;
         height: 170px;
+    }
+
+    .housing {
+        width: 100%;
     }
 
     .housing>a {

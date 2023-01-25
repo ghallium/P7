@@ -1,6 +1,6 @@
 import React from 'react'
 
-import imgAbout from '../../assets/about.png';
+/*import imgAbout from '../../assets/about.png';*/
 
 import './About.css';
 import Collapse from '../../components/collapse/collapse';
@@ -49,7 +49,7 @@ export default function About() {
     <div>
       
       <div className="cover">
-        <p className="imgAbout" style={{ backgroundImage: `url(${(imgAbout)})` }}></p>
+        <p className="imgAbout"></p>
       </div>
       <div className="values_container">
       {Values.map((item) => {
@@ -60,3 +60,5 @@ export default function About() {
   );
 
 }
+
+/* style={{ backgroundImage: `url(${(imgAbout)})` }}*/

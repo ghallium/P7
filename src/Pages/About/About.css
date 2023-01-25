@@ -1,16 +1,18 @@
 .cover {
-    width: 100%;
+    width: 85%;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 1%;
 }
 
 .imgAbout {
-    width: 86%;
+    width: 100%;
     height: 223px;
     border-radius: 25px;
-    background-repeat: no-repeat;
-    background-color: #00000073;
-    background-blend-mode: darken;
+    background: url('../../assets/about.png');
+    background-color: black;
+    filter: brightness(.7);
     
     
 }
@@ -30,6 +32,10 @@ RESPONSIVE
 
 @media screen and (min-width: 768px) and (max-width: 1100px) {
 
+    .cover {
+        width: 100%;
+    }
+    
     .imgAbout {
         width: 90%;
         border-radius: 15px;
@@ -54,6 +60,8 @@ RESPONSIVE
     
     .cover {
         margin-top: -25px;
+        width: 100%;
+        
     }
     
     .imgAbout {
