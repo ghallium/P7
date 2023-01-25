@@ -3,9 +3,11 @@ import { useState } from "react";
 import Vector from "../../assets/Vector.svg";
 import './collapse.css';
 
+
 export default function Collapse(props) {
+    /* Utilisation du state pour définir un état "active" */
     const [active, setActive] = useState(false);
-    const handleToggle = (e) => {
+    const handleToggle = (e) => { /* inverse la valeur de "active" lorsqu'elle est appelée */
       setActive(!active);
     };
     return (

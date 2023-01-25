@@ -23,6 +23,7 @@
     display: flex;
     justify-content: flex-start;
     list-style-type: none;
+    padding: 0;
 }
 
 .tags_elements li {
@@ -105,10 +106,12 @@
 .bottom_block {
     width: 100%;
     display: flex;
+    justify-content: center;
+    gap: 50px;
 }
 
 .description {
-    width: 50%;
+    width: 40%;
 }
 
 .description p {
@@ -116,7 +119,7 @@
 }
 
 .equipements {
-    width: 50%;
+    width: 40%;
 }
 
 .equipements p {

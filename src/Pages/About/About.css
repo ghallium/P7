@@ -9,10 +9,15 @@
     height: 223px;
     border-radius: 25px;
     background-repeat: no-repeat;
-    /*opacity: 0.3;
-    background: #000000;
-    mix-blend-mode: darken;*/
+    background-color: #00000073;
+    background-blend-mode: darken;
     
+    
+}
+
+.values_container {
+    width: 70%;
+    margin: 0 auto;
 }
 
 /*
@@ -28,6 +33,11 @@ RESPONSIVE
     .imgAbout {
         width: 90%;
         border-radius: 15px;
+        
+    }
+
+    .values_container {
+        width: 100%;
     }
 
 
@@ -38,6 +48,10 @@ RESPONSIVE
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
 
+    .imgAbout {
+        background: url('../../assets/aboutMobile.png');
+    }
+    
     .cover {
         margin-top: -25px;
     }
@@ -46,7 +60,15 @@ RESPONSIVE
        width: 90%; 
        background-position: center;
        border-radius: 10px;
-        
+       background-position: center;
+        background-size: cover;
+        object-fit: cover;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .values_container {
+        width: 100%;
     }
 
 }

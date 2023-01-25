@@ -1,3 +1,4 @@
+/* Utilisation de react-router-dom pour gérer les différentes pages*/
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Blank from "../layouts/Blank";
 import Default from "../layouts/Default";
@@ -8,6 +9,7 @@ import Logements from "../Pages/Logements/logements";
 
 const Router = () => {
   return (
+    /* Router définit différentes routes de l'application */
     <BrowserRouter>
       <Routes>
         <Route element={<Default />}>

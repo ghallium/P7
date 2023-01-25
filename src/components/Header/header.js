@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <header>
             <div>
-                <img src={LogoKasa} alt="logo Kasa" />
+                <a href="/"><img src={LogoKasa} alt="logo Kasa" /></a>
             </div>
                 <ul>
                     <Link to="/">Accueil</Link>

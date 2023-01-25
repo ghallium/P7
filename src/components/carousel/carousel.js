@@ -29,6 +29,7 @@ export default function Carousel() {
     };
 
     return (
+        <section>
         <div className="slider">
         {/* Showing slider navigation buttons */}
         <button className="vectorPrev">
@@ -57,6 +58,7 @@ export default function Carousel() {
         );
       })}
     </div>
+    </section>
   );
 
 }

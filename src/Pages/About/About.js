@@ -51,10 +51,11 @@ export default function About() {
       <div className="cover">
         <p className="imgAbout" style={{ backgroundImage: `url(${(imgAbout)})` }}></p>
       </div>
+      <div className="values_container">
       {Values.map((item) => {
         return <Collapse title={item.title} texte={item.texte} key={item.id} />;
       })}
-      
+     </div> 
     </div>
   );
 

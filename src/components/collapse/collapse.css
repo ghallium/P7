@@ -7,7 +7,7 @@
 
 .accordionTitle {
   background: #FF6060;
-  width: 68%;
+  width: 100%;
   height: 47px;
   display: flex;
   justify-content: space-between;
@@ -24,7 +24,7 @@
 }
 
 .accordionContent {
-  width: 68%;
+  width: 100%;
   
   padding-top: 1%;
   padding-bottom: 1%;
@@ -60,9 +60,11 @@
   
 }
 
-.vector.active {
-  transform: rotate(-90deg);
+.active > .accordionTitle > .vector {
+  transform: rotate(270deg);
 }
+
+
 
 /*
 ----------------------------------
