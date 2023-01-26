@@ -53,19 +53,28 @@
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
 
+    .carousel_container {
+        margin: 0 auto;
+        padding-left: 5%;
+    }
+
     .slider-image {
         width: 335px;
+        height: 255px;
         border-radius: 10px;
     }
 
     .vectorPrev {
         width: 11.67px;
         height: 19.8px;
+        left: 6px;
+    
     }
 
     .vectorNext {
         width: 11.67px;
         height: 19.8px;
+        right: 45px;
     }
 
 }

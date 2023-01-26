@@ -76,10 +76,14 @@
 
 .active-star {
     fill: #FF6060;
+    width:100%;
+    height: auto;
   }
 
 .false-star {
     fill: #E3E3E3;
+    width:100%;
+    height: auto;
 }
 
 .host {
@@ -119,7 +123,7 @@
 }
 
 .description {
-    width: 40%;
+    width: 45%;
 }
 
 .description p {
@@ -161,9 +165,26 @@
         border-radius: 5px;
     }
 
+    .active-star {
+        width: 50%;
+        height: auto;
+        viewBox: "0 0 30 30";
+        preserveAspectRatio: "xMidYMid meet"; 
+
+    }
+
+    .false-star {
+        width: 50%;
+        height: auto;
+    }
+
     .right_block {
         width: 100%;
         flex-direction: row;
+    }
+
+    .host p {
+        font-size: 12px;
     }
 
     .bottom_block {
