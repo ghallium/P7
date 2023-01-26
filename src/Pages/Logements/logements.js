@@ -45,7 +45,7 @@ export default function Logements() {
   return (
    <>
     <Carousel pictures={logement.pictures} />
-    <section>
+    
     <div className="content">
         <div className="left_block">
             <div className="location">
@@ -81,11 +81,11 @@ export default function Logements() {
             <Collapse texte={listeEquipements} title="Equipements" />
           </div>
         </div>
-        </section>
+        </>
     
 
     
-    </> 
+     
   );
 }
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import data from "../../data/logements.json";
-import Vector from "../../assets/Vector.svg";
+
 import './carousel.css';
 
 export default function Carousel() {
@@ -29,19 +29,24 @@ export default function Carousel() {
     };
 
     return (
-        <section>
+      <div className="carousel_container">  
         <div className="slider">
         {/* Showing slider navigation buttons */}
-        <button className="vectorPrev">
-            <img src={Vector} onClick={prevSlide} alt="fleche" />
-        </button>
-        <button className="vectorNext">
-            <img src={Vector} onClick={nextSlide} alt="fleche" />
-        </button>
+        <div className="vectorPrev" onClick={prevSlide}>
+            {/* Showing slider navigation buttons */}
+            <svg  alt="fleche" width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.960022 72.3458L8.04002 79.4258L47.64 39.8258L8.04002 0.22583L0.960022 7.30583L33.48 39.8258L0.960022 72.3458Z" fill="white"/>
+            </svg>
+        </div>
+        <div className="vectorNext" onClick={nextSlide}>
+            <svg  alt="fleche" width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.960022 72.3458L8.04002 79.4258L47.64 39.8258L8.04002 0.22583L0.960022 7.30583L33.48 39.8258L0.960022 72.3458Z" fill="white"/>
+            </svg>
+        </div>
         {/* Images */}
         {pictures.map((img, index) => {
         return (
-          <div key={index}>
+          <div className="slider_container" key={index}>
             {index === current && (
               <img
                 src={img}
@@ -58,7 +63,7 @@ export default function Carousel() {
         );
       })}
     </div>
-    </section>
+    </div>
   );
 
 }

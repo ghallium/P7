@@ -1,8 +1,14 @@
+.carousel_container {
+    width: 100%;
+    margin-left: 90px;
+}
+
 .slider {
     display: flex;
     align-items: center;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
+    position: relative;
     
     
 }
@@ -13,23 +19,32 @@
     height: 79.2px;
     border: 0;
     transform: rotate(180deg);
+    position: absolute;
+    left: 22px;
+    
     
     
 }
+
+
 
 .slider-image {
     border-radius: 25px;
+    width: 1240px;
+    height: 415px;
+    object-fit: cover;
 }
 
-.slider-image img {
-    
-}
+
 
 .vectorNext {
     width: 46.68px;
     height: 79.2px;
     border: 0;
     order: 3;
+    position: absolute;
+    right: 214px;
+    
 }
 
 .image-number {
@@ -54,3 +69,4 @@
     }
 
 }
+
