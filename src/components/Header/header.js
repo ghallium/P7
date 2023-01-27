@@ -11,8 +11,8 @@ export default function Header() {
                 <a href="/"><img src={LogoKasa} alt="logo Kasa" /></a>
             </div>
                 <ul>
-                    <NavLink to="/">Accueil</NavLink>
-                    <NavLink to="/about">A propos</NavLink>
+                    <NavLink className="navlink" to="/">Accueil</NavLink>
+                    <NavLink className="navlink" to="/about">A propos</NavLink>
                 </ul>
             
         </header>
