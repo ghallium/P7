@@ -12,7 +12,7 @@ export default function Collapse(props) {
     };
     return (
       <>
-      <div className={`accordion ${active && "active"}`}>
+      <div className={`accordion ${active && "showCollapse"}`}>
         <div className="accordionTitle" onClick={handleToggle}>
           <p>{props.title}</p>  <img
             className="vector"

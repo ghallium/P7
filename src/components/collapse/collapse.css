@@ -34,7 +34,7 @@
   
 }
 
-.accordion.active .accordionContent {
+.accordion.showCollapse .accordionContent {
   max-height: 250px; 
   background: #F6F6F6;
   margin-bottom: 30px;
@@ -60,7 +60,7 @@
   
 }
 
-.active > .accordionTitle > .vector {
+.showCollapse > .accordionTitle > .vector {
   transform: rotate(270deg);
 }
 
