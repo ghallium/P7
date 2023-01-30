@@ -27,6 +27,7 @@
     transform: rotate(180deg);
     position: absolute;
     left: 22px;
+    top: 35%;
     
     
     
@@ -48,13 +49,14 @@
     height: 79.2px;
     position: absolute;
     right: 25px;
+    top: 35%;
     
 }
 
 .image-number {
     position: absolute;
     top: 90%;
-    left: 45%;
+    left: 50%;
     color: white;
 }
 
@@ -76,13 +78,15 @@
         width: 11.67px;
         height: 19.8px;
         left: 6px;
+        top: 45%;
     
     }
 
     .vectorNext {
         width: 11.67px;
         height: 19.8px;
-        right: 45px;
+        right: 10px;
+        top: 45%;
     }
 
     .image-number {
