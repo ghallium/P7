@@ -1,7 +1,7 @@
 .content {
     width: 100%;
     display: flex;
-    
+    justify-content: space-between;
     flex-wrap: wrap;
     
     
@@ -68,6 +68,7 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: column-reverse;
+    align-items: flex-end;
     margin-right: 20px;
 }
 
@@ -122,6 +123,7 @@
     width: 98%;
     display: flex;
     justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
     gap: 50px;
 }
@@ -234,13 +236,19 @@
         
     }
 
+    .right_block {
+        flex-direction: row;
+        width: 100%;
+    }
+
     .rating {
-        width: 90%;
+        width: 40%;
         margin-left: 0;
     }
 
     .host {
         width: 100%;
+        align-items: flex-start;
     }
 
     .host p {
