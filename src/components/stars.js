@@ -7,7 +7,7 @@ export default function ColorStars(props) {
   const stars = [];
 
   for (let i = 1; i < maxStar + 1; i++) {
-    /* Si i est < ou = à nbStars, ajoute un nouvel élément active-star  */
+    /* Si i est < ou = à nbStars, ajoute à stars un nouvel élément active-star  */
     if (i <= nbStars) {
       stars.push(
         <svg key={i} className="active-star"  xmlns="http://www.w3.org/2000/svg">
