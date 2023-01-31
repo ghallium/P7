@@ -107,8 +107,17 @@
         width: 715px;
     }
 
+    .vectorPrev {
+        width: 35.01px;
+        height: 59.4px;
+        top: 43%;
+    }
+
     .vectorNext {
+        width: 35.01px;
+        height: 59.4px;
         right: 82px;
+        top: 43%;
     }
 
     .image-number {

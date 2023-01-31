@@ -1,11 +1,6 @@
 import React from 'react'
-
-/*import imgAbout from '../../assets/about.png';*/
-
 import './About.css';
 import Collapse from '../../components/collapse/collapse';
-
-
 
 export default function About() {
     
@@ -44,7 +39,6 @@ export default function About() {
     const Values = AboutValues();
     
   
-
   return (
     <div>
       
@@ -61,4 +55,3 @@ export default function About() {
 
 }
 
-/* style={{ backgroundImage: `url(${(imgAbout)})` }}*/

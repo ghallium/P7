@@ -13,8 +13,6 @@
     background: url('../../assets/about.png');
     background-color: black;
     filter: brightness(.7);
-    
-    
 }
 
 .values_container {
@@ -39,13 +37,11 @@ RESPONSIVE
     .imgAbout {
         width: 90%;
         border-radius: 15px;
-        
     }
 
     .values_container {
         width: 100%;
     }
-
 
 }
 
@@ -61,7 +57,6 @@ RESPONSIVE
     .cover {
         margin-top: -25px;
         width: 100%;
-        
     }
     
     .imgAbout {

@@ -21,9 +21,9 @@ export default function Carousel() {
 
     /**
     
-    * If the current slide is the first slide, then set the current slide to the last slide, otherwise
-    * set the current slide to the previous slide.
-    */
+    * Si la slide en cours est la 1re slide, définir slide en cours sur dernière slide,
+    sinon définir slide en cours sur la slide précédente */
+    
     const prevSlide = () => {
         setCurrent(current === 0 ? pictures.length - 1 : current - 1);
     };

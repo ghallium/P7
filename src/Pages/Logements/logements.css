@@ -247,28 +247,48 @@
         
     }
 
+    .left_block {
+        padding-left: 30px;
+    }
+
     .right_block {
         flex-direction: row;
         width: 100%;
     }
 
     .rating {
-        width: 40%;
+        width: 20%;
         height: 55px;
         margin-left: 0;
+        padding-left: 30px;
+    }
+
+    .active-star {
+        transform: scale(0.8);
+    }
+
+    .false-star {
+        transform: scale(0.8);
     }
 
     .host {
-        width: 60%;
+        width: 75%;
         align-items: flex-start;
+        padding-right: 20px;
     }
 
     .host p {
-        width: 60%;
+        width: 25%;
+    }
+
+    .host img {
+        width: 48px;
+        height: 48px;
     }
 
     .bottom_block {
         flex-direction: column;
+        gap: 0;
     }
 
     .description {
