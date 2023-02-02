@@ -5,11 +5,11 @@ import data from "../../data/logements.json";
 import './carousel.css';
 
 export default function Carousel() {
-    const {id} = useParams();
-    const foundItem = data.find((object) => object.id === id);
-    const pictures = foundItem.pictures;
+    const {id} = useParams(); 
+    const foundItem = data.find((object) => object.id === id); // trouve objet en fonction de son id
+    const pictures = foundItem.pictures; 
 
-    const [current, setCurrent] = useState(0);
+    const [current, setCurrent] = useState(0); // détermine l'image actuelle affichée, 0 => 1re image
 
      /**
     * Si la slide en cours est la dernière slide, revenir à la première ou aller à la suivante

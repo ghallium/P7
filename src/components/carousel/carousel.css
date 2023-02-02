@@ -3,21 +3,17 @@
     
 }
 
-
-
 .slider {
    
     width: 100%;
     margin: 0 auto;
     position: relative;
-    
-    
+     
 }
 
 .slider_container {
     width: 100%;
 }
-
 
 
 .vectorPrev {
@@ -28,8 +24,6 @@
     position: absolute;
     left: 22px;
     top: 35%;
-    
-    
     
 }
 

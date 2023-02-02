@@ -89,13 +89,3 @@ export default function Logements() {
   );
 }
 
-/* Problèmes connus 
-
-
-About - Mettre le darken sur l'image
-Collapse - comment gérer le changement de taille de texte en fonction de la page (about, logement) > div parentes
-Mise en page logements > refaire Carousel
-
-
-
-*/
