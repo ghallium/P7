@@ -253,6 +253,7 @@
 
     .right_block {
         flex-direction: row;
+        align-items: center;
         width: 100%;
     }
 
@@ -273,7 +274,6 @@
 
     .host {
         width: 75%;
-        align-items: flex-start;
         padding-right: 20px;
     }
 
