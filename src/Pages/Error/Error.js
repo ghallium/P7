@@ -1,10 +1,10 @@
 import React from 'react';
 import './Error.css';
-import Header from '../../components/Header/header';
+
 
 function Error() {
   return <div>
-          <Header />
+          
 
           <h1 className="error_title">404</h1>
           <p className="error_text">Oups! La page que vous demandez n'existe pas.</p>
